@@ -24,18 +24,23 @@ def get_filters():
     print('Great, I Love ' + city.title() + '!\n')
 
     # get user input for month (all, january, february, ... , june)
-    months = ['january', 'february', 'march', 'april', 'may', 'june']
+    months = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     month = ''
     while(month not in months):
         month = input('Which month would you like to see? \nChoose from this list: [All, January, February, March, April, May, June] ').lower()
-    
-    print(month.title() + ' is my favorite month!\n')
+    if(month.lower() != 'all'): 
+        print(month.title() + ' is my favorite month!\n')
+    else:
+        print('\n')
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-    day = input('Which day would you like to see? \nChoose from this list: [All, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday] ').lower()
-    if(day != 'all'):
-        print(day.title() + 's are the best\n')
+    day = ''
+    while(day not in days):
+            day = input('Which day would you like to see? \nChoose from this list: [All, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday] ').lower()
+
+    if(day.lower() != 'all'): 
+        print(day.title() + ' is the best day!\n')
     else:
         print('\n')
 
