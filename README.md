@@ -2,10 +2,10 @@
 20 January 2020. 
 
 ### Project Title
-US Bikeshare Data
+US Bikeshare Data - Matthew Stogner
 
 ### Description
-This python code allows the  user to filter and analyze US Bikeshare Data for New York City, Washington, and Chicago.
+This python code allows the user to filter and analyze US Bikeshare Data for New York City, Washington, and Chicago.
 
 ### Files used
 bikeshare2.py, README.txt, chicago.csv, washington.csv, new_york_city.csv
